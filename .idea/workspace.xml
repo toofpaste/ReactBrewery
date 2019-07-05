@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0cfd6df-4b76-459a-9427-43eb8c9603f3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -18,11 +23,11 @@
     <splitter split-orientation="vertical" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/index.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+                <state relative-caret-position="20">
+                  <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -39,11 +44,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/App.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+                <state relative-caret-position="136">
+                  <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
                 </state>
               </provider>
             </entry>
@@ -51,8 +56,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/kegs/KegList.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-167">
-                  <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+                <state relative-caret-position="408">
+                  <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -75,8 +80,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/index.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+                <state relative-caret-position="173">
+                  <caret line="15" selection-start-line="15" selection-end-line="15" />
                 </state>
               </provider>
             </entry>
@@ -143,7 +148,7 @@
             <entry file="file://$PROJECT_DIR$/src/components/Home/Home.jsx">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="204">
-                  <caret line="12" column="62" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="62" />
+                  <caret line="12" column="62" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="62" />
                   <folding>
                     <element signature="e#1#27#0" expanded="true" />
                   </folding>
@@ -154,8 +159,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/NavBar/NavBar.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+                <state relative-caret-position="136">
+                  <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -188,10 +193,11 @@
         <option value="$PROJECT_DIR$/src/components/kegs/EditKeg.jsx" />
         <option value="$PROJECT_DIR$/src/components/kegs/EditKegs.jsx" />
         <option value="$PROJECT_DIR$/src/components/kegs/AddKeg.jsx" />
-        <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/components/kegs/KegList.jsx" />
         <option value="$PROJECT_DIR$/src/App.jsx" />
         <option value="$PROJECT_DIR$/src/index.jsx" />
+        <option value="$PROJECT_DIR$/src/index.css" />
+        <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/components/NavBar/NavBar.jsx" />
       </list>
     </option>
@@ -232,20 +238,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="beer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="beer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="kegs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="beer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="beer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="NavBar" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -268,8 +260,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\mlarr\Desktop\beer\src" />
       <recent name="C:\Users\mlarr\Desktop\beer\src\components" />
+      <recent name="C:\Users\mlarr\Desktop\beer\src\Assets" />
+      <recent name="C:\Users\mlarr\Desktop\beer\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -295,12 +288,12 @@
       <option name="presentableId" value="Default" />
       <updated>1562342926957</updated>
       <workItem from="1562342929404" duration="3925000" />
-      <workItem from="1562348414441" duration="4763000" />
+      <workItem from="1562348414441" duration="6642000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8688000" />
+    <option name="totallyTimeSpent" value="10567000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="964" y="0" width="963" height="1047" extended-state="0" />
@@ -385,7 +378,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/Home/Home.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="62" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="62" />
+          <caret line="12" column="62" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="62" />
           <folding>
             <element signature="e#1#27#0" expanded="true" />
           </folding>
@@ -399,27 +392,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/kegs/Kegs.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -430,13 +402,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/kegs/KegList.jsx">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-167">
-          <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -449,18 +418,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+        <state relative-caret-position="20">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/kegs/KegList.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/NavBar/NavBar.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        <state relative-caret-position="136">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
