@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0cfd6df-4b76-459a-9427-43eb8c9603f3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -153,8 +154,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/NavBar/NavBar.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="139">
-                  <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+                <state relative-caret-position="105">
+                  <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -282,12 +283,12 @@
       <option name="presentableId" value="Default" />
       <updated>1562342926957</updated>
       <workItem from="1562342929404" duration="3925000" />
-      <workItem from="1562348414441" duration="7953000" />
+      <workItem from="1562348414441" duration="9166000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11878000" />
+    <option name="totallyTimeSpent" value="13091000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="964" y="0" width="963" height="1047" extended-state="0" />
@@ -446,8 +447,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/NavBar/NavBar.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+        <state relative-caret-position="105">
+          <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

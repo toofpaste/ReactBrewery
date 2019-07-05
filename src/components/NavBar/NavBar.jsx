@@ -23,8 +23,7 @@ export default function NavBar() {
         background-size: contain;
         background-repeat: no-repeat;
         display: flex;
-        flex: 1fr 1fr;
-        
+        flex-direction: column;
         }
         button{
         background-color: transparent;
