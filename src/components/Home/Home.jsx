@@ -10,6 +10,7 @@ export default function Home(){
       <div className="container">
         <h1>BEER 4 KIDS</h1>
         <Link to="/keglist"><button>View Kegs</button></Link>
+        <Link to="/newkeg"><button>Add New Keg</button></Link>
       </div>
     </div>
   );

@@ -51,6 +51,7 @@ export default function KegList() {
       </div>
       <div>
         <Link to="/newkeg"><button>Add Keg</button></Link>
+        <Link to="/editkeg"><button>Edit Kegs</button></Link>
       </div>
     </div>
   );
