@@ -19,12 +19,12 @@ function App() {
         .content{
             background-color: #f5e3b0;
             border: 1px solid black;
-            height: 0vh;
+            height: 8vh;
             width: 51vw;
             margin-left: 44%;
-            margin-top: -92%;
+            margin-top: -110vh;
             border-radius: 25px;
-            background-size: cover;
+            
         }
       `}</style>
         <NavBar/>

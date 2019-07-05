@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 export default function Kegs(props) {
   return (
     <div>
@@ -16,22 +17,30 @@ export default function Kegs(props) {
       margin-left: 5px;
       border: 1px solid grey;
       font-size: 18px;
-      border-radius: 10x;
+      border-radius: 10px;
       margin-right: 40%;
       text-align: center;
-      margin-top: -20px;
+      margin-top: -40px;
       font-weight: bolder;
       }
+      button{
+        background-color: transparent;
+        padding: 17px;
+        height: 2rem;
+        float: left;
+        color: black;
+        margin-left: 15px;
+        border-radius: 10px;
+        font-weight: bold;
+        }
             `}</style>
       <div>
       <div className='title'>
         <h4>{props.name}</h4>
         <div className='info'>
-        <p>{props.type}</p>
-        <p>${props.price}</p>
-        <p>{props.alc}%</p>
-        <p>{props.amount} pints left</p>
+        <p>{props.type}  | ${props.price}  | {props.alc}% ALC |  {props.amount} pints left</p>
         </div>
+        <Link to="/editkeg"><button>Edit Keg</button></Link>
       </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+![alt text](https://raw.githubusercontent.com/toofpaste/ReactBrewery/master/Beer4Kids.JPG)
 ## Available Scripts
 
 In the project directory, you can run:
