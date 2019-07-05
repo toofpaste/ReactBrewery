@@ -1,12 +1,23 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import { Switch, Route } from 'react-router-dom';
+import KegList from './components/kegs/KegList';
+import Home from './components/Home/Home';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+function App() {
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+  return (
+    <div>
+      <style jsx>{`
+        background-color: #deb887;
+        background-size: 200%;
+        padding-bottom: 100%;
+      `}</style>
+      <Switch>
+        <Route exact path='/' component={Home}/>
+        <Route path='/keglist' component={KegList}/>
+      </Switch>
+    </div>
+  );
+}
+
+export default App;
