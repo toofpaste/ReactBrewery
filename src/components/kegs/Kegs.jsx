@@ -40,7 +40,7 @@ export default function Kegs(props) {
         <div className='info'>
         <p>{props.type}  | ${props.price}  | {props.alc}% ALC |  {props.amount} pints left</p>
         </div>
-        <Link to="/editkeg"><button>Edit Keg</button></Link>
+
       </div>
       </div>
     </div>

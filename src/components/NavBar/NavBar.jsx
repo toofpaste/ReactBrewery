@@ -149,9 +149,10 @@ li:nth-child(48){
         <h1>BEER 4 KIDS</h1>
         <div id='beer'></div>
         <div className='buttonDiv'>
-          <Link to="/"><button>Home</button></Link>
-          <Link to="/keglist"><button>View Kegs</button></Link>
-          <Link to="/newkeg"><button>Add Keg</button></Link>
+          <Link to="/"><button>Home Page</button></Link>
+          <Link to="/keglist"><button>Show Keg</button></Link>
+          <Link to="/newkeg"><button>Add Kegs</button></Link>
+            <Link to="/editkeg"><button>Edit  Kegs</button></Link>
         </div>
       </div>
 

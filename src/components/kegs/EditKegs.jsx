@@ -5,6 +5,17 @@ export default function EditKeg() {
   return (
     <div>
       <style jsx>{`
+            input[type=text]:focus {
+       border: 3px solid #555;
+    }
+    form{
+    border: 1px solid black;
+    margin-left: 39%;
+    margin-right: 38%;
+    }
+    h1{
+    text-align: center;
+    }
             `}</style>
       <div className="container">
         <h1>Edit Keg</h1>

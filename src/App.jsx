@@ -11,13 +11,13 @@ function App() {
   return (
     <div>
       <style jsx>{`
-        background-color: #deb887;
+        background-color: #38588c;
         background-size: 200%;
         padding-bottom: 100%;
         width: 100vw;
         overflow-x: hidden;
         .content{
-            background-color: #f5e3b0;
+            background-color: #e8e6e1;
             border: 1px solid black;
             height: 8vh;
             width: 51vw;
