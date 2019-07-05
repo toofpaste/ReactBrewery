@@ -19,12 +19,29 @@ export default function NavBar() {
         .container{
         background-image: url(${beerBg});
         height: 60vh;
+        width: 100vw;
         background-size: contain;
         background-repeat: no-repeat;
+        display: flex;
+        flex: 1fr 1fr;
+        
+        }
+        button{
+        background-color: transparent;
+        color: whitesmoke;
+        padding: 17px;
+        height: 3rem;
+        float: left;
+        }
+        Link{
+        
         }
       `}</style>
         <div className="container">
         <h1>BEER 4 KIDS</h1>
+            <Link to="/"><button>Home</button></Link>
+            <Link to="/keglist"><button>View Kegs</button></Link>
+            <Link to="/newkeg"><button>Add Keg</button></Link>
         </div>
     </div>
   );
