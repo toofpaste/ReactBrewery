@@ -12,6 +12,7 @@ function App() {
     <div>
       <style jsx>{`
         background-color: #38588c;
+  background-image: repeating-linear-gradient(-65deg, transparent, transparent 50px, rgba(255,255,255,.1) 50px, rgba(255,255,255,.1) 100px);
         background-size: 200%;
         padding-bottom: 100%;
         width: 100vw;
