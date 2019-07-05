@@ -83,18 +83,7 @@ body{
   overflow-x: hidden;
   padding-left: 3rem;
 }
-h1{
-  font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 15em;
-  line-height: .9em;
-  text-transform: uppercase;
-  position: absolute;
-  margin:0;
-  top: 0;
-  left: .3em;
-  color: rgba(255,255,255, 0.3);
-}
+
 div{
   perspective: 1100px;
   perspective-origin: 15% 30%;
@@ -144,9 +133,34 @@ li:nth-child(48){
     padding-left: 85%;
     padding-top: 1%;
     }
+    .charlie{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%)
+}
+.charlie h1{
+  font-family:'Impact', sans-serif;
+  font-size:12em;
+  color: rgba(0,0,0,0.2);
+  background: url(https://www.cervezatyris.com/wp-content/uploads/2018/07/cerveza-1400x608.jpg);
+  -webkit-background-clip:text;
+  background-position:0px 30px;
+  animation: beer 80s linear normal forwards;
+}
+
+
+@keyframes beer{
+  0%{
+    background-position:0px 30px;
+  }
+  100%{
+    background-position:0px -400px;
+  }
+}
       `}</style>
       <div className="container">
-        <h1>BEER 4 KIDS</h1>
+          <div className='charlie'><h1 data-text="Charlie">BEER 4 KIDS</h1></div>
         <div id='beer'></div>
         <div className='buttonDiv'>
           <Link to="/"><button>Home Page</button></Link>

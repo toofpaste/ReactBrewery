@@ -28,15 +28,15 @@ function App() {
             
         }
       `}</style>
-        <NavBar/>
-        <div className='content'>
-      <Switch>
-        <Route exact path='/' component={Home}/>
-        <Route path='/keglist' component={KegList}/>
-        <Route path='/newkeg' component={AddKeg}/>
-        <Route path='/editkeg' component={EditKeg}/>
-      </Switch>
-        </div>
+      <NavBar/>
+      <div className='content'>
+        <Switch>
+          <Route exact path='/' component={Home}/>
+          <Route path='/keglist' component={KegList}/>
+          <Route path='/newkeg' component={AddKeg}/>
+          <Route path='/editkeg' component={EditKeg}/>
+        </Switch>
+      </div>
     </div>
   );
 }
