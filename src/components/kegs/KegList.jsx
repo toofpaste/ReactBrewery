@@ -38,6 +38,7 @@ export default function KegList() {
   return (
     <div>
       <style jsx>{`
+        
             `}</style>
       <div>
         {allKegs.map((beer, index) =>
@@ -50,8 +51,6 @@ export default function KegList() {
         )}
       </div>
       <div>
-        <Link to="/newkeg"><button>Add Keg</button></Link>
-        <Link to="/editkeg"><button>Edit Kegs</button></Link>
       </div>
     </div>
   );

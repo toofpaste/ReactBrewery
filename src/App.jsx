@@ -17,12 +17,14 @@ function App() {
         width: 100vw;
         overflow-x: hidden;
         .content{
-            background-color: white;
+            background-color: #f5e3b0;
             border: 1px solid black;
             height: 0vh;
-            width: 34vw;
-            margin-left: 57%;
+            width: 51vw;
+            margin-left: 44%;
             margin-top: -92%;
+            border-radius: 25px;
+            background-size: cover;
         }
       `}</style>
         <NavBar/>
