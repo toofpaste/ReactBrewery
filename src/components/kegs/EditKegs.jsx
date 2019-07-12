@@ -9,7 +9,7 @@ function EditKeg(props) {
     let _newAmount = null;
     function handleEditKegSubmission(event) {
         event.preventDefault();
-        props.onEditKeg({name:_name.value, newName: _newName, newType: _newType.value, newPrice:_newPrice.value, newAlc:_newAlc.value, newAmount:_newAmount.value});
+        props.onEditKeg({name:_name.value, newName: _newName.value, newType: _newType.value, newPrice:_newPrice.value, newAlc:_newAlc.value, newAmount:_newAmount.value});
         _name.value = '';
         _newName.value = '';
         _newType.value = '';
@@ -55,7 +55,7 @@ function EditKeg(props) {
                         value={_name}/><br/>
                     <input
                         type='text'
-                        id='name'
+                        id='newName'
                         placeholder='NEW BEER NAME'
                         ref={(input) => {_newName = input;}}
                         value={_newName}/><br/>

@@ -5,6 +5,7 @@ import Home from './components/Home/Home';
 import NewKegControl from './components/kegs/NewKegControl';
 import EditKeg from './components/kegs/EditKegs';
 import NavBar from './components/NavBar/NavBar';
+import EditKegControl from './components/kegs/EditKegsControl';
 
 
 
@@ -120,6 +121,24 @@ class App extends React.Component{
         this.handleAddingNewKegToList = this.handleAddingNewKegToList.bind(this);
 
     }
+    handleEditingKeg(kegName){
+        let indexName = 0;
+
+
+        for(let i = 0; i < this.state.masterYourKegList.length; i++){
+            if(this.state.masterYourKegList[i].name === kegName.name){
+                indexName = i;
+                i = 1000;
+                break;
+            }
+        }
+        this.state.masterYourKegList[indexName].name = kegName.newName;
+        this.state.masterYourKegList[indexName].type = kegName.newType;
+        this.state.masterYourKegList[indexName].price = kegName.newPrice;
+        this.state.masterYourKegList[indexName].alc = kegName.newAlc;
+        this.state.masterYourKegList[indexName].amount = kegName.newAmount;
+        this.setState({masterYourKegList: this.state.masterYourKegList});
+    }
     handleAddingNewKegToList(newKeg){
 
         const newMasterYourKegList = this.state.masterYourKegList.slice();
@@ -127,28 +146,7 @@ class App extends React.Component{
         this.setState({masterYourKegList: newMasterYourKegList})
 
     }
-    handleEditingKeg(kegName){
-        let indexName = 0;
 
-        const newList = this.state.masterYourKegList.slice();
-        console.log("next line");
-        console.log(newList);
-        for(var i = 0; i < this.state.masterYourKegList.length; i++){
-            if(this.state.masterYourKegList[i].name === kegName.name){
-                indexName = i;
-                i = 1000;
-                break;
-            }
-        }
-
-        this.state.masterYourKegList[indexName].name = kegName.newName;
-        this.state.masterYourKegList[indexName].type = kegName.newType;
-        this.state.masterYourKegList[indexName].price = kegName.newPrice;
-        this.state.masterYourKegList[indexName].alc = kegName.newAlc;
-        this.state.masterYourKegList[indexName].amount = kegName.newAmount;
-        alert('IT WENT');
-        this.setState({masterYourKegList: this.state.masterYourKegList});
-    }
     render() {
         return (
             <div>
@@ -184,7 +182,7 @@ class App extends React.Component{
                         <Route exact path='/' component={Home}/>
                         <Route path='/keglist'render={() => <KegList yourKegList={this.state.masterYourKegList}/>}/>
                         <Route path='/newkeg' render={()=><NewKegControl onNewKegCreation={this.handleAddingNewKegToList}/>} />
-                        <Route path='/editkeg' render={() => <EditKeg onEditKeg={this.handleEditingKeg}/>}/>
+                        <Route path='/editkeg' render={() => <EditKegControl onEditKeg={this.handleEditingKeg}/>}/>
                     </div>
                 </Switch>
             </div>
