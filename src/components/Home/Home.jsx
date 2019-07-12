@@ -5,8 +5,10 @@ export default function Home(){
   return (
     <div>
       <style jsx>{`
+      
       h1{
       text-align: center;
+      color: white;
       }
       p{
       font-size: 8px;
