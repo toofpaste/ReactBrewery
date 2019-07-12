@@ -158,6 +158,7 @@ li:nth-child(48){
   }
 }
       `}</style>
+      <div id='all'>
       <div className="container">
         <div className='charlie'><h1 data-text="Charlie">BEER 4 KIDS</h1></div>
         <div id='beer'></div>
@@ -222,6 +223,7 @@ li:nth-child(48){
         </ul>
       </div>
 
+    </div>
     </div>
   );
 }

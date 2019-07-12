@@ -19,7 +19,7 @@ export default function EditKeg() {
             `}</style>
       <div className="container">
         <h1>Edit Keg</h1>
-          
+
         <form>
           <input type='text' id='name' placeholder='NAME'/><br/>
           <input type='text' id='type' placeholder='TYPE'/><br/>

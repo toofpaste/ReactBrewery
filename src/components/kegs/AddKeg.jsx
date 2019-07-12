@@ -5,20 +5,27 @@ export default function AddKeg() {
   return (
     <div>
       <style jsx>{`
-      input[type=text]:focus {
-       border: 3px solid #555;
-    }
+
     form{
+    position: fixed;
     border: 1px solid black;
-    margin-left: 39%;
-    margin-right: 38%;
+    margin-left: 9rem;
+    margin-right: auto;
+    margin-top: 3rem;
     }
     h1{
+     position: fixed;
+    width: 18rem;
+    border: 1px solid black;
+    background-color: white;
+    margin-left: 5rem;
+    margin-right: auto;
     text-align: center;
     }
             `}</style>
       <div className="container">
         <h1>Add New Keg</h1>
+          <br/>
         <form>
           <input type='text' id='name' placeholder='NAME'/><br/>
           <input type='text' id='type' placeholder='TYPE'/><br/>

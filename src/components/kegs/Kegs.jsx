@@ -4,7 +4,9 @@ export default function Kegs(props) {
   return (
     <div>
       <style jsx>{`
+
       h4 {
+      background-color: white;
       padding-left: 20px;
       margin-left: 5px;
       border: 1px solid black;
@@ -13,6 +15,7 @@ export default function Kegs(props) {
       border-radius: 10px;
       }
       .info{
+      background-color: white;
       margin-left: 5px;
       border: 1px solid grey;
       font-size: 18px;
@@ -33,7 +36,7 @@ export default function Kegs(props) {
         font-weight: bold;
         }
             `}</style>
-      <div>
+      <div id='everything'>
         <div className='title'>
           <h4>{props.name}</h4>
           <div className='info'>
