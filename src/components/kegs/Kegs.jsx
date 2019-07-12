@@ -52,8 +52,8 @@ export default function Kegs(props) {
 Kegs.propTypes = {
   name: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
-  price: PropTypes.number.isRequired,
-  alc: PropTypes.number.isRequired,
-  amount: PropTypes.number.isRequired
+  price: PropTypes.string.isRequired,
+  alc: PropTypes.string.isRequired,
+  amount: PropTypes.string.isRequired
 };
 

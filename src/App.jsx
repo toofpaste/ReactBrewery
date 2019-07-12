@@ -1,8 +1,10 @@
 import React from 'react';
+
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import KegList from './components/kegs/KegList';
 import Home from './components/Home/Home';
-import AddKeg from './components/kegs/AddKeg';
+import NewKeg from './components/kegs/NewKeg';
+import NewKegControl from './components/kegs/NewKegControl';
 import EditKeg from './components/kegs/EditKegs';
 import NavBar from './components/NavBar/NavBar';
 
@@ -50,15 +52,14 @@ class App extends React.Component{
         background-color: transparent;
         }
       `}</style>
-
                 <div className='content'>
                     <NavBar/>
                 </div>
                 <Switch>
                     <div className='switchContent'>
                         <Route exact path='/' component={Home}/>
-                        <Route path='/keglist' component={KegList}/>
-                        <Route path='/newkeg' component={AddKeg}/>
+                        <Route path='/keglist'render={() => <KegList/>}/>
+                        <Route path='/newkeg' render={()=><NewKegControl onNewKegCreation={this.handleAddingNewKegToList}/>} />
                         <Route path='/editkeg' component={EditKeg}/>
                     </div>
                 </Switch>
