@@ -15,108 +15,110 @@ class App extends React.Component{
             masterYourKegList: [{
                 name: 'Lagunitas',
                 type: 'IPA',
-                price: 5,
-                alc: 8.3,
-                amount: 90
+                price: '5',
+                alc: '8.3',
+                amount: '90'
             },
                 {
                     name: 'Budweiser',
                     type: 'Pale Ale',
-                    price: 3,
-                    alc: 5.6,
-                    amount: 45
+                    price: '3',
+                    alc: '5.6',
+                    amount: '45'
                 },
                 {
                     name: 'Kraft Mac n Cheese Beer',
                     type: 'Pilsner',
-                    price: 8,
-                    alc: 14.6,
-                    amount: 100
+                    price: '8',
+                    alc: '14.6',
+                    amount: '100'
                 },
                 {
                     name: 'Play Dough Flavor',
                     type: 'Brown Ale',
-                    price: 4,
-                    alc: 2.6,
-                    amount: 8
+                    price: '4',
+                    alc: '2.6',
+                    amount: '8'
                 },
                 {
                     name: 'Dogs R Cute',
                     type: 'Pilsner',
-                    price: 2,
-                    alc: 1.6,
-                    amount: 111
+                    price: '2',
+                    alc: '1.6',
+                    amount: '111'
                 },
                 {
                     name: 'FortNite',
                     type: 'IPA',
-                    price: 3,
-                    alc: 2.6,
-                    amount: 100
+                    price: '3',
+                    alc: '2.6',
+                    amount: '100'
                 },
                 {
                     name: 'Bud-Light',
                     type: 'Wheat',
-                    price: 8,
-                    alc: 11.6,
-                    amount: 100
+                    price: '8',
+                    alc: '11.6',
+                    amount: '100'
                 },  {
                     name: 'Didly Did It Again',
                     type: 'Pale Ale',
-                    price: 6,
-                    alc: 19.6,
-                    amount: 10
+                    price: '6',
+                    alc: '19.6',
+                    amount: '10'
                 },  {
                     name: 'Whatever Britney Is Getting',
                     type: 'Brown Ale',
-                    price: 12,
-                    alc: 13.2,
-                    amount: 80
+                    price: '12',
+                    alc: '13.2',
+                    amount: '80'
                 },  {
                     name: 'IDK',
                     type: 'All Mixed',
-                    price: 95,
-                    alc: 1.6,
-                    amount: 1
+                    price: '95',
+                    alc: '1.6',
+                    amount:'1'
                 },  {
                     name: 'French Fries',
                     type: 'IPA',
-                    price: 2,
-                    alc: 1.6,
-                    amount: 100
+                    price: '2',
+                    alc: '1.6',
+                    amount: '100'
                 },  {
                     name: 'Water',
                     type: 'Double IPA',
-                    price: 9,
-                    alc: 10.2,
-                    amount: 83
+                    price: '9',
+                    alc: '10.2',
+                    amount: '83'
                 },  {
                     name: 'Moms Couch',
                     type: 'Cushions',
-                    price: 3,
-                    alc: 24.6,
-                    amount: 92
+                    price: '3',
+                    alc: '24.6',
+                    amount: '92'
                 },  {
                     name: 'Burnt Hair',
                     type: 'Pilsner',
-                    price: 2,
-                    alc: 0.6,
-                    amount: 73
+                    price: '2',
+                    alc: '0.6',
+                    amount: '73'
                 },  {
                     name: 'Obama',
                     type: 'Pilsner',
-                    price: 9,
-                    alc: 4.6,
-                    amount: 46
+                    price: '9',
+                    alc: '4.6',
+                    amount: '46'
                 },  {
                     name: 'FireWorks',
                     type: 'Explosive',
-                    price: 1,
-                    alc: 99.9,
-                    amount: 8
+                    price: '1',
+                    alc: '99.9',
+                    amount: '8'
                 }]
         };
+        this.handleEditingKeg = this.handleEditingKeg.bind(this);
         this.handleAddingNewKegToList = this.handleAddingNewKegToList.bind(this);
+
     }
     handleAddingNewKegToList(newKeg){
 
@@ -127,6 +129,10 @@ class App extends React.Component{
     }
     handleEditingKeg(kegName){
         let indexName = 0;
+
+        const newList = this.state.masterYourKegList.slice();
+        console.log("next line");
+        console.log(newList);
         for(var i = 0; i < this.state.masterYourKegList.length; i++){
             if(this.state.masterYourKegList[i].name === kegName.name){
                 indexName = i;
@@ -134,11 +140,13 @@ class App extends React.Component{
                 break;
             }
         }
+
         this.state.masterYourKegList[indexName].name = kegName.newName;
         this.state.masterYourKegList[indexName].type = kegName.newType;
         this.state.masterYourKegList[indexName].price = kegName.newPrice;
         this.state.masterYourKegList[indexName].alc = kegName.newAlc;
         this.state.masterYourKegList[indexName].amount = kegName.newAmount;
+        alert('IT WENT');
         this.setState({masterYourKegList: this.state.masterYourKegList});
     }
     render() {
@@ -176,7 +184,7 @@ class App extends React.Component{
                         <Route exact path='/' component={Home}/>
                         <Route path='/keglist'render={() => <KegList yourKegList={this.state.masterYourKegList}/>}/>
                         <Route path='/newkeg' render={()=><NewKegControl onNewKegCreation={this.handleAddingNewKegToList}/>} />
-                        <Route path='/editkeg' component={EditKeg}/>
+                        <Route path='/editkeg' render={() => <EditKeg onEditKeg={this.handleEditingKeg}/>}/>
                     </div>
                 </Switch>
             </div>

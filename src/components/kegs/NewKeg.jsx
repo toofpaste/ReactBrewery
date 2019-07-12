@@ -115,8 +115,8 @@ function NewKeg(props) {
   let currentlyVisibleContent = null;
   function handleNewKegSubmission(event) {
     event.preventDefault();
-    props.onNewKegCreation({name:_name.value, type: _type.value, price:_price.value, alc:_alc.value, amount:_amount.value, id: v4() });
-    allKeg.push({name:_name.value, type: _type.value, price:_price.value, alc:_alc.value, amount:_amount.value, id: v4() });
+    props.onNewKegCreation({name:_name.value, type: _type.value, price:_price.value, alc:_alc.value, amount:_amount.value, key: v4() });
+    allKeg.push({name:_name.value, type: _type.value, price:_price.value, alc:_alc.value, amount:_amount.value, key: v4() });
     _name.value = '';
     _type.value = '';
     _price.value = '';

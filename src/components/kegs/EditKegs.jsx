@@ -1,30 +1,21 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import KegList from './KegList';
-const allKeg = [];
-function NewKeg(props) {
+function EditKeg(props) {
     let _name = null;
     let _newName = null;
     let _newType = null;
     let _newPrice = null;
     let _newAlc = null;
     let _newAmount = null;
-    let currentlyVisibleContent = null;
-    function handleNewKegSubmission(event) {
+    function handleEditKegSubmission(event) {
         event.preventDefault();
-        allKeg.push({name:_name.value, newName: _newName, newType: _newType.value, newPrice:_newPrice.value, newAlc:_newAlc.value, newAmount:_newAmount.value});
+        props.onEditKeg({name:_name.value, newName: _newName, newType: _newType.value, newPrice:_newPrice.value, newAlc:_newAlc.value, newAmount:_newAmount.value});
         _name.value = '';
         _newName.value = '';
         _newType.value = '';
         _newPrice.value = '';
         _newAlc.value = '';
         _newAmount.value = '';
-    }
-    if(allKeg.length >= 1){
-        currentlyVisibleContent = <KegList yourKegList={allKeg}/>
-    } else {
-        currentlyVisibleContent = <p>No Previous Statuses to show</p>
     }
     return (
         <div>
@@ -53,50 +44,53 @@ function NewKeg(props) {
     }
             `}</style>
             <div className="container">
-                <h1>Add New Keg</h1>
+                <h1>Edit Keg</h1>
                 <br/>
-                <form onSubmit={handleNewKegSubmission}>
+                <form onSubmit={handleEditKegSubmission}>
                     <input
                         type='text'
                         id='name'
-                        placeholder='NAME'
+                        placeholder='Current beer name'
                         ref={(input) => {_name = input;}}
                         value={_name}/><br/>
                     <input
                         type='text'
+                        id='name'
+                        placeholder='NEW BEER NAME'
+                        ref={(input) => {_newName = input;}}
+                        value={_newName}/><br/>
+                    <input
+                        type='text'
                         id='type'
-                        placeholder='TYPE'
-                        ref={(input) => {_type = input;}}
-                        value={_type}/><br/>
+                        placeholder='NEW BEER TYPE'
+                        ref={(input) => {_newType = input;}}
+                        value={_newType}/><br/>
                     <input type='text'
                            id='price'
-                           placeholder='PRICE'
-                           ref={(input) => {_price = input;}}
-                           value={_price}/><br/>
+                           placeholder='NEW BEER PRICE'
+                           ref={(input) => {_newPrice = input;}}
+                           value={_newPrice}/><br/>
                     <input
                         type='text'
                         id='alc'
-                        placeholder='ALC'
-                        ref={(input) => {_alc = input;}}
-                        value={_alc}/><br/>
+                        placeholder='NEW ALC %'
+                        ref={(input) => {_newAlc = input;}}
+                        value={_newAlc}/><br/>
                     <input
                         type='text'
                         id='amount'
-                        placeholder='AMOUNT'
-                        ref={(input) => {_amount = input;}}
-                        value={_amount}/><br/>
-                    <button type='submit'>Add Keg</button>
+                        placeholder='NEW AMOUNT'
+                        ref={(input) => {_newAmount = input;}}
+                        value={_newAmount}/><br/>
+                    <button type='submit'>Edit Keg</button>
                 </form>
-                <div id='addedBeers'>
-                    {currentlyVisibleContent}
-                </div>
             </div>
         </div>
     );
 }
-NewKeg.propTypes = {
-    onNewKegCreation: PropTypes.func
+EditKeg.propTypes = {
+    onEditKeg: PropTypes.func
 };
 
 
-export default NewKeg;
+export default EditKeg;
