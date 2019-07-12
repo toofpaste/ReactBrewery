@@ -33,6 +33,7 @@ function App() {
         background-color: transparent;
         }
       `}</style>
+        
 
       <div className='content'>
           <NavBar/>
