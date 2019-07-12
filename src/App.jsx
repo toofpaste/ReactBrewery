@@ -1,9 +1,7 @@
 import React from 'react';
-
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import {Switch, Route } from 'react-router-dom';
 import KegList from './components/kegs/KegList';
 import Home from './components/Home/Home';
-import NewKeg from './components/kegs/NewKeg';
 import NewKegControl from './components/kegs/NewKegControl';
 import EditKeg from './components/kegs/EditKegs';
 import NavBar from './components/NavBar/NavBar';
@@ -126,6 +124,22 @@ class App extends React.Component{
         newMasterYourKegList.push(newKeg);
         this.setState({masterYourKegList: newMasterYourKegList})
 
+    }
+    handleEditingKeg(kegName){
+        let indexName = 0;
+        for(var i = 0; i < this.state.masterYourKegList.length; i++){
+            if(this.state.masterYourKegList[i].name === kegName.name){
+                indexName = i;
+                i = 1000;
+                break;
+            }
+        }
+        this.state.masterYourKegList[indexName].name = kegName.newName;
+        this.state.masterYourKegList[indexName].type = kegName.newType;
+        this.state.masterYourKegList[indexName].price = kegName.newPrice;
+        this.state.masterYourKegList[indexName].alc = kegName.newAlc;
+        this.state.masterYourKegList[indexName].amount = kegName.newAmount;
+        this.setState({masterYourKegList: this.state.masterYourKegList});
     }
     render() {
         return (
