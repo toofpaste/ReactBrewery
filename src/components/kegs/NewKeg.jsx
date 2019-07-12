@@ -56,14 +56,16 @@ function NewKeg(props) {
     margin-top: 3rem;
     }
     h1{
-      color: white;
+    font-family: Verdana;
+      color: grey;
      position: fixed;
     width: 18rem;
+    font-family: Verdana;
     border: 1px solid white;
     margin-left: 5rem;
     margin-right: auto;
     text-align: center;
-    }
+    }git 
             `}</style>
       <div className="container">
         <h1>Add New Keg</h1>

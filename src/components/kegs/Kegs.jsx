@@ -7,6 +7,7 @@ export default function Kegs(props) {
       <style jsx>{`
 
       h4 {
+      font-family: Verdana;
       background-color: white;
       padding-left: 20px;
       margin-left: 5px;

@@ -29,6 +29,7 @@ function EditKeg(props) {
     margin-top: 3rem;
     }
     h1{
+    font-family: Verdana;
       color: white;
      position: fixed;
     width: 18rem;

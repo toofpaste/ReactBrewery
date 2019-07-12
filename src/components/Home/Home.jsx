@@ -7,6 +7,7 @@ export default function Home(){
       <style jsx>{`
       
       h1{
+      font-family: Verdana;
       text-align: center;
       color: white;
       }
