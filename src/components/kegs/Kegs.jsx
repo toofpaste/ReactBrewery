@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 export default function Kegs(props) {
   return (
     <div>
@@ -35,10 +36,19 @@ export default function Kegs(props) {
         border-radius: 10px;
         font-weight: bold;
         }
+        img{
+        width: 50px;
+        height: 50px;
+            position: absolute;
+    margin-top: -36px;
+    margin-left: 14px;
+
+        }
             `}</style>
       <div id='everything'>
         <div className='title'>
           <h4>{props.name}</h4>
+          <img src={props.img}></img>
           <div className='info'>
             <p>{props.type}  | ${props.price}  | {props.alc}% ALC |  {props.amount} pints left</p>
           </div>
@@ -54,6 +64,7 @@ Kegs.propTypes = {
   type: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
   alc: PropTypes.string.isRequired,
-  amount: PropTypes.string.isRequired
+  amount: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired
 };
 

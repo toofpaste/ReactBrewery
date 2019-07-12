@@ -3,109 +3,31 @@ import { Link } from 'react-router-dom';
 import { v4 } from 'uuid';
 import PropTypes from 'prop-types';
 import KegList from './KegList';
-const allKeg = [{
-  name: 'Lagunitas',
-  type: 'IPA',
-  price: '5',
-  alc: '8.3',
-  amount: '90'
-},
-  {
-    name: 'Budweiser',
-    type: 'Pale Ale',
-    price: '3',
-    alc: '5.6',
-    amount: '45'
-  },
-  {
-    name: 'Kraft Mac n Cheese Beer',
-    type: 'Pilsner',
-    price: '8',
-    alc: '14.6',
-    amount: '100'
-  },
-  {
-    name: 'Play Dough Flavor',
-    type: 'Brown Ale',
-    price: '4',
-    alc: '2.6',
-    amount: '8'
-  },
-  {
-    name: 'Dogs R Cute',
-    type: 'Pilsner',
-    price: '2',
-    alc: '1.6',
-    amount: '111'
-  },
-  {
-    name: 'FortNite',
-    type: 'IPA',
-    price: '3',
-    alc: '2.6',
-    amount: '100'
-  },
-  {
-    name: 'Bud-Light',
-    type: 'Wheat',
-    price: '8',
-    alc: '11.6',
-    amount: '100'
-  },  {
-    name: 'Didly Did It Again',
-    type: 'Pale Ale',
-    price: '6',
-    alc: '19.6',
-    amount: '10'
-  },  {
-    name: 'Whatever Britney Is Getting',
-    type: 'Brown Ale',
-    price: '12',
-    alc: '13.2',
-    amount: '80'
-  },  {
-    name: 'IDK',
-    type: 'All Mixed',
-    price: '95',
-    alc: '1.6',
-    amount: '1'
-  },  {
-    name: 'French Fries',
-    type: 'IPA',
-    price: '2',
-    alc: '1.6',
-    amount: '100'
-  },  {
-    name: 'Water',
-    type: 'Double IPA',
-    price: '9',
-    alc: '10.2',
-    amount: '83'
-  },  {
-    name: 'Moms Couch',
-    type: 'Cushions',
-    price: '3',
-    alc: '24.6',
-    amount: '92'
-  },  {
-    name: 'Burnt Hair',
-    type: 'Pilsner',
-    price: '2',
-    alc: '0.6',
-    amount: '73'
-  },  {
-    name: 'Obama',
-    type: 'Pilsner',
-    price: '9',
-    alc: '4.6',
-    amount: '46'
-  },  {
-    name: 'FireWorks',
-    type: 'Explosive',
-    price: '1',
-    alc: '99.9',
-    amount: '8'
-  }];
+import beer1 from '../Assets/beer1.png';
+import beer2 from '../Assets/beer2.png';
+import beer3 from '../Assets/beer3.png';
+import beer4 from '../Assets/beer4.png';
+import beer5 from '../Assets/beer5.png';
+import beer6 from '../Assets/beer6.png';
+import beer7 from '../Assets/beer7.png';
+import beer8 from '../Assets/beer8.png';
+import beer9 from '../Assets/beer3.png';
+import beer10 from '../Assets/beer10.png';
+import beer11 from '../Assets/beer11.png';
+import beer12 from '../Assets/beer12.png';
+import beer13 from '../Assets/beer13.png';
+import beer14 from '../Assets/beer14.png';
+import beer15 from '../Assets/beer15.png';
+import beer16 from '../Assets/beer16.png';
+import beer17 from '../Assets/beer17.png';
+import beer18 from '../Assets/beer18.png';
+import beer19 from '../Assets/beer19.png';
+import beer20 from '../Assets/beer20.png';
+import beer21 from '../Assets/beer21.png';
+let beerImg = [beer1, beer2, beer3, beer4, beer5, beer6, beer7, beer8, beer9, beer10,
+  beer11, beer12, beer13, beer14, beer15, beer16, beer17, beer18, beer19,
+  beer20, beer21];
+
 function NewKeg(props) {
   let _name = null;
   let _type = null;
@@ -114,8 +36,8 @@ function NewKeg(props) {
   let _amount = null;
   function handleNewKegSubmission(event) {
     event.preventDefault();
-    props.onNewKegCreation({name:_name.value, type: _type.value, price:_price.value, alc:_alc.value, amount:_amount.value, key: v4() });
-    allKeg.push({name:_name.value, type: _type.value, price:_price.value, alc:_alc.value, amount:_amount.value, key: v4() });
+    let x = Math.floor(Math.random() * (beerImg.length))
+    props.onNewKegCreation({name:_name.value, type: _type.value, price:_price.value, alc:_alc.value, amount:_amount.value, img:beerImg[x], key: v4() });
     _name.value = '';
     _type.value = '';
     _price.value = '';

@@ -5,7 +5,30 @@ import Home from './components/Home/Home';
 import NewKegControl from './components/kegs/NewKegControl';
 import NavBar from './components/NavBar/NavBar';
 import EditKegControl from './components/kegs/EditKegsControl';
-
+import beer1 from './components/Assets/beer1.png';
+import beer2 from './components/Assets/beer2.png';
+import beer3 from './components/Assets/beer3.png';
+import beer4 from './components/Assets/beer4.png';
+import beer5 from './components/Assets/beer5.png';
+import beer6 from './components/Assets/beer6.png';
+import beer7 from './components/Assets/beer7.png';
+import beer8 from './components/Assets/beer8.png';
+import beer9 from './components/Assets/beer3.png';
+import beer10 from './components/Assets/beer10.png';
+import beer11 from './components/Assets/beer11.png';
+import beer12 from './components/Assets/beer12.png';
+import beer13 from './components/Assets/beer13.png';
+import beer14 from './components/Assets/beer14.png';
+import beer15 from './components/Assets/beer15.png';
+import beer16 from './components/Assets/beer16.png';
+import beer17 from './components/Assets/beer17.png';
+import beer18 from './components/Assets/beer18.png';
+import beer19 from './components/Assets/beer19.png';
+import beer20 from './components/Assets/beer20.png';
+import beer21 from './components/Assets/beer21.png';
+let beerImg = [beer1, beer2, beer3, beer4, beer5, beer6, beer7, beer8, beer9, beer10,
+                beer11, beer12, beer13, beer14, beer15, beer16, beer17, beer18, beer19,
+                beer20, beer21];
 
 
 class App extends React.Component{
@@ -17,103 +40,120 @@ class App extends React.Component{
                 type: 'IPA',
                 price: '5',
                 alc: '8.3',
-                amount: '90'
+                amount: '90',
+                img: beerImg[0]
+
             },
                 {
                     name: 'Budweiser',
                     type: 'Pale Ale',
                     price: '3',
                     alc: '5.6',
-                    amount: '45'
+                    amount: '45',
+                    img: beerImg[1]
                 },
                 {
                     name: 'Kraft Mac n Cheese Beer',
                     type: 'Pilsner',
                     price: '8',
                     alc: '14.6',
-                    amount: '100'
+                    amount: '100',
+                    img: beerImg[2]
                 },
                 {
                     name: 'Play Dough Flavor',
                     type: 'Brown Ale',
                     price: '4',
                     alc: '2.6',
-                    amount: '8'
+                    amount: '8',
+                    img: beerImg[3]
                 },
                 {
                     name: 'Dogs R Cute',
                     type: 'Pilsner',
                     price: '2',
                     alc: '1.6',
-                    amount: '111'
+                    amount: '111',
+                    img: beerImg[4]
                 },
                 {
                     name: 'FortNite',
                     type: 'IPA',
                     price: '3',
                     alc: '2.6',
-                    amount: '100'
+                    amount: '100',
+                    img: beerImg[5]
                 },
                 {
                     name: 'Bud-Light',
                     type: 'Wheat',
                     price: '8',
                     alc: '11.6',
-                    amount: '100'
+                    amount: '100',
+                    img: beerImg[6]
                 },  {
                     name: 'Didly Did It Again',
                     type: 'Pale Ale',
                     price: '6',
                     alc: '19.6',
-                    amount: '10'
+                    amount: '10',
+                    img: beerImg[7]
                 },  {
                     name: 'Whatever Britney Is Getting',
                     type: 'Brown Ale',
                     price: '12',
                     alc: '13.2',
-                    amount: '80'
+                    amount: '80',
+                    img: beerImg[8]
                 },  {
                     name: 'IDK',
                     type: 'All Mixed',
                     price: '95',
                     alc: '1.6',
-                    amount:'1'
+                    amount:'1',
+                    img: beerImg[9]
                 },  {
                     name: 'French Fries',
                     type: 'IPA',
                     price: '2',
                     alc: '1.6',
-                    amount: '100'
+                    amount: '100',
+                    img: beerImg[10]
                 },  {
                     name: 'Water',
                     type: 'Double IPA',
                     price: '9',
                     alc: '10.2',
-                    amount: '83'
+                    amount: '83',
+                    img: beerImg[11]
                 },  {
                     name: 'Moms Couch',
                     type: 'Cushions',
                     price: '3',
                     alc: '24.6',
-                    amount: '92'
+                    amount: '92',
+                    img: beerImg[12]
                 },  {
                     name: 'Burnt Hair',
                     type: 'Pilsner',
                     price: '2',
                     alc: '0.6',
-                    amount: '73'
+                    amount: '73',
+                    img: beerImg[13]
                 },  {
                     name: 'Obama',
                     type: 'Pilsner',
                     price: '9',
                     alc: '4.6',
-                    amount: '46'
+                    amount: '46',
+                    img: beerImg[14]
                 },  {
                     name: 'FireWorks',
                     type: 'Explosive',
                     price: '1',
                     alc: '99.9',
-                    amount: '8'
+                    amount: '8',
+                    img: beerImg[15]
                 }]
         };
         this.handleEditingKeg = this.handleEditingKeg.bind(this);
