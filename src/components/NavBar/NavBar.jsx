@@ -159,71 +159,71 @@ li:nth-child(48){
 }
       `}</style>
       <div id='all'>
-      <div className="container">
-        <div className='charlie'><h1 data-text="Charlie">BEER 4 KIDS</h1></div>
-        <div id='beer'></div>
-        <div className='buttonDiv'>
-          <Link to="/"><button>Home Page</button></Link>
-          <Link to="/keglist"><button>Show Keg</button></Link>
-          <Link to="/newkeg"><button>Add Kegs</button></Link>
-          <Link to="/editkeg"><button>Edit  Kegs</button></Link>
+        <div className="container">
+          <div className='charlie'><h1 data-text="Charlie">BEER 4 KIDS</h1></div>
+          <div id='beer'></div>
+          <div className='buttonDiv'>
+            <Link to="/"><button>Home Page</button></Link>
+            <Link to="/keglist"><button>Show Keg</button></Link>
+            <Link to="/newkeg"><button>Add Kegs</button></Link>
+            <Link to="/editkeg"><button>Edit  Kegs</button></Link>
+          </div>
         </div>
-      </div>
 
-      <div>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
+        <div>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
 
-    </div>
+      </div>
     </div>
   );
 }

@@ -36,7 +36,7 @@ function NewKeg(props) {
   let _amount = null;
   function handleNewKegSubmission(event) {
     event.preventDefault();
-    let x = Math.floor(Math.random() * (beerImg.length))
+    let x = Math.floor(Math.random() * (beerImg.length));
     props.onNewKegCreation({name:_name.value, type: _type.value, price:_price.value, alc:_alc.value, amount:_amount.value, img:beerImg[x], key: v4() });
     _name.value = '';
     _type.value = '';
@@ -67,37 +67,37 @@ function NewKeg(props) {
             `}</style>
       <div className="container">
         <h1>Add New Keg</h1>
-          <br/>
+        <br/>
         <form onSubmit={handleNewKegSubmission}>
           <input
-              type='text'
-              id='name'
-              placeholder='NAME'
-              ref={(input) => {_name = input;}}
-              value={_name}/><br/>
+            type='text'
+            id='name'
+            placeholder='NAME'
+            ref={(input) => {_name = input;}}
+            value={_name}/><br/>
           <input
-              type='text'
-              id='type'
-              placeholder='TYPE'
-          ref={(input) => {_type = input;}}
-          value={_type}/><br/>
+            type='text'
+            id='type'
+            placeholder='TYPE'
+            ref={(input) => {_type = input;}}
+            value={_type}/><br/>
           <input type='text'
-                 id='price'
-                 placeholder='PRICE'
-          ref={(input) => {_price = input;}}
-          value={_price}/><br/>
+            id='price'
+            placeholder='PRICE'
+            ref={(input) => {_price = input;}}
+            value={_price}/><br/>
           <input
-              type='text'
-              id='alc'
-              placeholder='ALC'
-          ref={(input) => {_alc = input;}}
-          value={_alc}/><br/>
+            type='text'
+            id='alc'
+            placeholder='ALC'
+            ref={(input) => {_alc = input;}}
+            value={_alc}/><br/>
           <input
-              type='text'
-              id='amount'
-              placeholder='AMOUNT'
-          ref={(input) => {_amount = input;}}
-          value={_amount}/><br/>
+            type='text'
+            id='amount'
+            placeholder='AMOUNT'
+            ref={(input) => {_amount = input;}}
+            value={_amount}/><br/>
           <button type='submit'>Add Keg</button>
         </form>
       </div>
