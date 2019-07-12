@@ -1,6 +1,5 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import beerBg from '../Assets/beerBG.png';
 
 
 export default function NavBar() {
@@ -160,13 +159,13 @@ li:nth-child(48){
 }
       `}</style>
       <div className="container">
-          <div className='charlie'><h1 data-text="Charlie">BEER 4 KIDS</h1></div>
+        <div className='charlie'><h1 data-text="Charlie">BEER 4 KIDS</h1></div>
         <div id='beer'></div>
         <div className='buttonDiv'>
           <Link to="/"><button>Home Page</button></Link>
           <Link to="/keglist"><button>Show Keg</button></Link>
           <Link to="/newkeg"><button>Add Kegs</button></Link>
-            <Link to="/editkeg"><button>Edit  Kegs</button></Link>
+          <Link to="/editkeg"><button>Edit  Kegs</button></Link>
         </div>
       </div>
 

@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 export default function Kegs(props) {
   return (
     <div>
@@ -35,13 +34,13 @@ export default function Kegs(props) {
         }
             `}</style>
       <div>
-      <div className='title'>
-        <h4>{props.name}</h4>
-        <div className='info'>
-        <p>{props.type}  | ${props.price}  | {props.alc}% ALC |  {props.amount} pints left</p>
-        </div>
+        <div className='title'>
+          <h4>{props.name}</h4>
+          <div className='info'>
+            <p>{props.type}  | ${props.price}  | {props.alc}% ALC |  {props.amount} pints left</p>
+          </div>
 
-      </div>
+        </div>
       </div>
     </div>
   );

@@ -1,6 +1,5 @@
 import React from 'react';
 import Kegs from'./Kegs';
-import{ Link } from 'react-router-dom';
 
 
 var allKegs = [
