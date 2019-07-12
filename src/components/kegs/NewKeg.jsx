@@ -112,7 +112,6 @@ function NewKeg(props) {
   let _price = null;
   let _alc = null;
   let _amount = null;
-  let currentlyVisibleContent = null;
   function handleNewKegSubmission(event) {
     event.preventDefault();
     props.onNewKegCreation({name:_name.value, type: _type.value, price:_price.value, alc:_alc.value, amount:_amount.value, key: v4() });
@@ -122,11 +121,6 @@ function NewKeg(props) {
     _price.value = '';
     _alc.value = '';
     _amount.value = '';
-  }
-  if(allKeg.length >= 1){
-    currentlyVisibleContent = <KegList yourKegList={allKeg}/>
-  } else {
-    currentlyVisibleContent = <p>No Previous Statuses to show</p>
   }
   return (
     <div>
@@ -147,11 +141,6 @@ function NewKeg(props) {
     margin-left: 5rem;
     margin-right: auto;
     text-align: center;
-    }
-    #addedBeers{
-    margin-top: 15rem;
-    margin-left: 25rem;
-    margin-right: -8rem;
     }
             `}</style>
       <div className="container">
@@ -189,9 +178,6 @@ function NewKeg(props) {
           value={_amount}/><br/>
           <button type='submit'>Add Keg</button>
         </form>
-        <div id='addedBeers'>
-        {currentlyVisibleContent}
-        </div>
       </div>
     </div>
   );

@@ -3,7 +3,6 @@ import {Switch, Route } from 'react-router-dom';
 import KegList from './components/kegs/KegList';
 import Home from './components/Home/Home';
 import NewKegControl from './components/kegs/NewKegControl';
-import EditKeg from './components/kegs/EditKegs';
 import NavBar from './components/NavBar/NavBar';
 import EditKegControl from './components/kegs/EditKegsControl';
 
@@ -123,21 +122,24 @@ class App extends React.Component{
     }
     handleEditingKeg(kegName){
         let indexName = 0;
-
+        let found = false;
 
         for(let i = 0; i < this.state.masterYourKegList.length; i++){
-            if(this.state.masterYourKegList[i].name === kegName.name){
+            if(this.state.masterYourKegList[i].name.toLocaleLowerCase() === kegName.name.toLowerCase()){
                 indexName = i;
+                found = true;
                 i = 1000;
                 break;
             }
         }
-        this.state.masterYourKegList[indexName].name = kegName.newName;
-        this.state.masterYourKegList[indexName].type = kegName.newType;
-        this.state.masterYourKegList[indexName].price = kegName.newPrice;
-        this.state.masterYourKegList[indexName].alc = kegName.newAlc;
-        this.state.masterYourKegList[indexName].amount = kegName.newAmount;
-        this.setState({masterYourKegList: this.state.masterYourKegList});
+        if(found) {
+            this.state.masterYourKegList[indexName].name = kegName.newName;
+            this.state.masterYourKegList[indexName].type = kegName.newType;
+            this.state.masterYourKegList[indexName].price = kegName.newPrice;
+            this.state.masterYourKegList[indexName].alc = kegName.newAlc;
+            this.state.masterYourKegList[indexName].amount = kegName.newAmount;
+            this.setState({masterYourKegList: this.state.masterYourKegList});
+        }else alert('Beer not found');
     }
     handleAddingNewKegToList(newKeg){
 
